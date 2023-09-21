@@ -1,0 +1,30 @@
+<h1>SPALA掲示板</h1>
+<h3>詳細</h3>
+<div class="spala">
+  <p><%= @spala.name %></p>
+  <p><%= @spala.created_at %></p>
+  <p><%= @spala.review %></p>
+  <p><%= @spala.image %></p>
+  <% if user_signed_in? %>
+  <% if current_user.already_liked?(@spala) %>
+    <%= link_to spala_like_path(@spala), method: :delete do %>
+        <i class="fas fa-heart"></i><%= @spala.likes.count %>
+    <% end %>
+  <% else %>
+    <%= link_to spala_likes_path(@spala), method: :post do %>
+        <i class="far fa-heart"></i><%= @spala.likes.count %>
+    <% end %>
+  <% end %>
+<% else %>
+<i class="far fa-heart"></i><%= @spala.likes.count %>
+<% end %>
+<%= link_to "編集する", edit_spala_path(@spala.id) %>
+</div>
+
+<h2>いいねしたユーザー</h2>
+<% @spala.liked_users.each do |user| %>
+<li><%= user.email %></li>
+<% end %>
+
+
+<%= link_to "投稿一覧に戻る", spalas_path %>

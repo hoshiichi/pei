@@ -1,0 +1,64 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+
+<h3>一覧ページ</h3>
+<h3>投稿を検索</h3>
+ <%= form_tag({controller:"spalas",action:"index"}, method: :get) do %>
+   <%= text_field_tag :search %>
+   <%= submit_tag '検索する'  %>
+<% end %>
+<%= link_to "新規投稿へ", new_spala_path %>
+<%= page_entries_info @spalas %>
+<%= paginate @spalas %>
+<% if user_signed_in? %>
+  <%= link_to "マイページへ", user_path(current_user.id) %>
+<% end %>
+<div class="spalas-container">
+  <% @spalas.each do |t| %>
+    <%= image_tag t.user.image_url, size: "250x200" if t.user.image? %>
+    <div class="spala">
+    <div class="main-box">
+        <div class="left-container">
+            <%= t.user.name %>
+            <%= image_tag t.image_url, size: "250x200" if t.image? %>
+
+            <%= t.name %>
+            <%= t.review %>
+            <%= t.image %>
+          <div>
+        <div class="right-container">
+            <%= link_to "編集する", edit_spala_path(t.id) %>
+            <%= button_to "削除する", spala_path(t.id), method: :delete %> 
+            <%= link_to "詳細へ", spala_path(t.id) %> 
+          <div>
+
+      <h2>総合評価：
+      <span class="star-rating">
+        <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+        <span class="star-rating-back">★★★★★</span>
+      </span> 
+      </h2>
+</div>
+  
+<% if user_signed_in? %>
+<% if current_user.already_liked?(t) %>
+   <%= link_to spala_like_path(id: t.id, spala_id: t.id), method: :delete do %>
+      
+      <i class="fas fa-heart"></i><%= t.likes.count %>
+      
+   <% end %>
+<% else %>
+   <%= link_to spala_likes_path(id: t.id, spala_id: t.id), method: :post do %>
+      
+      <i class="far fa-heart"></i><%= t.likes.count %>
+      
+   <% end %>
+<% end %>
+<% else %>
+
+<i class="far fa-heart"></i><%= t.likes.count %>
+
+<% end %>
+
+  <%= button_to 'ログアウト', destroy_user_session_path, method: :delete %> 
+  <%= link_to "トップページに戻る", root_path %>
+  <% end %>

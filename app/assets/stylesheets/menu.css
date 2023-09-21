@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ main{
+  background-image: url("/assets/IMG_1112.jpg");
+ }
+ .boxmenu {
+    display: flex;  
+    flex-wrap: wrap;
+ }
+ .toro{
+width: 30%;
+ padding-left: 70px;
+ margin-right: 10px;
+ }
+ .to{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+
+ .par{
+  width: 30%;
+  margin-right: 10px;
+ }
+ .pa{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ 
+ .toma{
+  width: 30%;
+  }
+  .ku{
+    margin-left: 82px;
+    margin-top: 30px;
+ }
+ .kuritoma{
+  width: 30%;
+  padding-left: 70px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }
+ .ma{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ .tara{
+  width: 30%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }
+ .me{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ .corn{
+  width: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }
+ .co{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+
+ .meat{
+  width: 30%;
+  padding-left: 70px;
+  margin-right: 10px;
+ }
+ .tokusei{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ .mar{
+  width: 30%;
+  margin-right: 10px;
+ }
+ .mo{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ .teri{
+  width: 30%;
+ }
+ .te{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
+ .sara{
+  width: 30%;
+  padding-left: 70px;
+ }
+ .sa{
+  margin-left: 82px;
+  margin-top: 30px;
+ }
