@@ -1,11 +1,17 @@
 <%= stylesheet_link_tag 'menu', :media => "all" %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Hind:wght@700&family=Kaisei+Decol:wght@400;500&family=Montserrat:wght@100&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
 
-<h1>メニュー一覧</h1>
+<div class="jj">
+ <h1>メニュー<i class="fa-solid fa-utensils"></i></h1>
  <p>当店自慢のパスタやチーズをおかけします</p>
+</div>
 <div class="boxmenu">
  <div class="toro">
  <%= image_tag 'IMG_3276.jpeg', size: "250x225", class:"to"%>
- <p>torokeru</p>
+ <p>とろける７種のチーズのカルボ　税込み円</p>
+ <p>当店人気No1</p>
  </div>
  <div class="par">
  <%= image_tag 'IMG_3272.jpeg', size: "250x225", class:"pa"%>
@@ -34,4 +40,11 @@
  <div class="sara">
  <%= image_tag 'IMG_3275.jpeg', size: "250x225", class:"sa"%>
  </div>
+</div>
+
+<div class="container">
+<a href="http://localhost:3000/" class="btn-shine">トップページへ</a>
+</div>
+<div class="container-02">
+<a href="http://localhost:3000/perfumes" class="btn-shine is-pink">診断ページへ</a>
 </div>

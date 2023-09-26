@@ -1,24 +1,35 @@
 <!DOCTYPE html> <!--　この文章がHTML文章であることを伝える要素です。-->
 <html lang="ja"><!--言語の指定-->
+<%= stylesheet_link_tag 'sin', :media => "all" %>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Hind:wght@700&family=Kaisei+Decol:wght@400;500&family=Montserrat:wght@100&family=Shadows+Into+Light&family=Special+Elite&family=Yuji+Mai&display=swap" rel="stylesheet">
+
     <head><!--ページに表示されない情報(サイトの裏側の設定)-->
         <meta charset="utf-8">
         <title>spala診断</title><!--ブラウザのタブのタイトルを指定-->
     </head>
 
     <body>
-        <header>
-            <h1 class="headline">
-            <a>SPALA</a>
-            </h1>
-            <ul class="nav-list">
-                <li class="nav-list-item"> ドキドキパスタ</li>
-                <li class="nav-list-item"><%= link_to "診断", perfumes_path, class: "link" %></li>
-            </ul>
-        </header>
+       <div class="lo">
+            <div class="headline">
+                <h1>SPALA<span>占い</span></h1>
+                 
+            </div>
+            
+            <div class='arrow_box'>今日の気分にあったパスタ・ピザを診断しよう！！</div>
+            
 
-        <div class="start">
-            <h6>Are you ready?</h6>
-            <%= link_to "診断を始める", new_perfume_path, class: "link" %>
-        </div>
-        <%= link_to "トップページに戻る", root_path %>
+            <div class="ui">
+                    <a href="http://localhost:3000/perfumes/new", class="btn-emergency-real">
+                    <span class="btn-emergency-real-bottom"></span>
+                    <span class="btn-emergency-real-top"><span>押す</span></span>
+                </a>
+                <%= image_tag '16545.png', size: "275x275", class:"ko"%>
+            </div>
+                
+      </div>    
+        <%= link_to "トップページに戻る", root_path, class:"gi" %>
     </body>
+
+   

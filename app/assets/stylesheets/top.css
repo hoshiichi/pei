@@ -7,9 +7,27 @@
    width: 100%; 
    height: 600px; 
    overflow: hidden;
+   background-color: transparent;
    } 
-@keyframes slideshow{ 0%{ opacity: 0; } 10%{ opacity: 1; } 28%{ opacity: 1 } 38%{ opacity: 0; } 100%{ opacity: 0; } } 
-.slide img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: auto; opacity: 0; animation :slideshow 20s linear infinite; } 
+@keyframes slideshow{ 
+  0%{ 
+      opacity: 0;
+     } 
+  10%{ 
+    opacity: 1; 
+  } 
+  28%{ 
+    opacity: 1 
+  } 
+  38%{ 
+    opacity: 0;
+   } 
+   100%{ 
+    opacity: 0;
+   } } 
+
+.slide img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: auto; opacity: 0; animation :slideshow 24s linear infinite; background-color: transparent;
+} 
 .slide img:nth-child(2){ animation-delay: 8s; } 
 .slide img:last-child{ animation-delay: 16s; }
 .mini {
@@ -26,7 +44,8 @@
   font-weight: bold;
   font-size: 2em;
   text-decoration: none;
-  font-family:"Shadows Into Light";
+  font-family: 'Kaisei Decol', serif;
+
   
 }
 
@@ -60,6 +79,7 @@
   font-weight: bold;
   font-size: 2em;
   text-decoration: none;
+  font-family: 'Kaisei Decol', serif;
 }
 
 .mouth::after {
@@ -92,6 +112,7 @@
   font-weight: bold;
   font-size: 2em;
   text-decoration: none;
+  font-family: 'Kaisei Decol', serif;
 }
 
 .sin::after {
@@ -117,6 +138,7 @@
     border-bottom: solid 2px rgb(217, 37, 37);
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
 
 }
 .box17:before, .box17:after{
@@ -152,11 +174,11 @@
   
   .third-block {
     height: 600px;
-    background-color: #c4665179;
+    background-color: rgba(228, 192, 126, 0.37);
   }
   
   .ion{
-    background-color: #d7d4d499;
+    background-color: rgba(228, 192, 126, 0.37);
     height: 450px;
     display:flex;
   }

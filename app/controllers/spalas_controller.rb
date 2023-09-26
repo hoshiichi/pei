@@ -11,7 +11,7 @@ class SpalasController < ApplicationController
         @spalas = Spala.where("name LIKE ? ",'%' + params[:search] + '%')
       end
 
-      @spalas = @spalas.page(params[:page]).per(3)
+      @spalas = @spalas.page(params[:page]).per(5)
    
     end
      

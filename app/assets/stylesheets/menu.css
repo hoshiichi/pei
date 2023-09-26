@@ -1,100 +1,360 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
- main{
-  background-image: url("/assets/IMG_1112.jpg");
- }
- .boxmenu {
-    display: flex;  
-    flex-wrap: wrap;
- }
- .toro{
-width: 30%;
- padding-left: 70px;
- margin-right: 10px;
- }
- .to{
-  margin-left: 82px;
-  margin-top: 30px;
- }
+   margin: 0;
+   padding: 0;
+}
 
- .par{
-  width: 30%;
-  margin-right: 10px;
- }
- .pa{
-  margin-left: 82px;
-  margin-top: 30px;
+body {
+   background-image: url(/assets/IMG_1113.jpg);
+   background-position: center;
+   background-size: cover;
+
+}
+
+.jj{
+   width: 100%;
+   text-align: center;
+
+}
+
+h1{
+   position: relative;
+   display: inline-block;
+   padding: 0 55px;
+   margin-top: 30px;
+   margin-left: 100px auto;
+   margin-right: 100px auto;
+   margin-bottom: 20px;
+   color: #FFF;
+   font-family: 'Kaisei Decol', serif;
+
+   
+}
+
+h1:before, h1:after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   display: inline-block;
+   width: 45px;
+   height: 2px;
+   border-top: solid 2px rgb(230, 228, 228);
+   border-bottom: solid 2px rgb(228, 226, 226);
  }
  
- .toma{
-  width: 30%;
-  }
-  .ku{
-    margin-left: 82px;
-    margin-top: 30px;
+ h1:before {
+   left:0;
  }
- .kuritoma{
-  width: 30%;
-  padding-left: 70px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
- }
- .ma{
-  margin-left: 82px;
-  margin-top: 30px;
- }
- .tara{
-  width: 30%;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 10px;
- }
- .me{
-  margin-left: 82px;
-  margin-top: 30px;
- }
- .corn{
-  width: 30%;
-  margin-bottom: 10px;
-  margin-top: 10px;
- }
- .co{
-  margin-left: 82px;
-  margin-top: 30px;
+ h1:after {
+   right: 0;
  }
 
- .meat{
-  width: 30%;
-  padding-left: 70px;
-  margin-right: 10px;
+
+ 
+ 
+
+.boxmenu {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+p {
+   width: 100%;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   color: azure;
+   font-weight: bold;
+}
+
+.toro {
+   width: 30%;
+   margin-left: 70px;
+   margin-right: 10px;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 50px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+
+
+.to {
+   margin-left: 82px;
+   margin-top: 30px;
+   border: 1px solid;
+   /* 線の太さと可視化 */
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+   /* 右上を角丸に */
+   border-color: #e27203bb;
+
+}
+
+.par {
+   width: 30%;
+   margin-right: 10px;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+
+}
+
+.pa {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.toma {
+   width: 30%;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+
+}
+
+.ku {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.kuritoma {
+   width: 30%;
+   margin-left: 70px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.ma {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.tara {
+   width: 30%;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+
+}
+
+.me {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+
+
+
+}
+
+.corn {
+   width: 30%;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.co {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.meat {
+   width: 30%;
+   margin-left: 70px;
+   margin-right: 10px;
+   background-color: azure;
+
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.tokusei {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.mar {
+   width: 30%;
+   margin-right: 10px;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.mo {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.teri {
+   width: 30%;
+   background-color: azure;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.te {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.sara {
+   width: 30%;
+   margin-left: 70px;
+   background-color: azure;
+   margin-top: 10px;
+   margin-bottom: 40px;
+   border-radius: 5% 5% 5% 5%;
+   color: #020c0e;
+   background: transparent;
+   /*背景色*/
+   border-top: solid 6px #d6861d;
+   border-bottom: solid 6px #d6861d;
+   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+   /*影*/
+}
+
+.sa {
+   margin-left: 82px;
+   margin-top: 30px;
+   border-top-left-radius: 50px;
+   /* 左上を角丸に */
+   border-top-right-radius: 50px;
+}
+
+.container {
+   font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   background-color: transparent;
  }
- .tokusei{
-  margin-left: 82px;
-  margin-top: 30px;
+ 
+ 
+ /* ここから下がボタンのCSS　*/
+ .btn-shine {
+   color: #FFF;
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
+   line-height: 45px;
+   width: 200px;
+   position: relative;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid transparent;
+   outline: 1px solid;
+   outline-color: rgba(255, 255, 255, 0.5);
+   outline-offset: 0px;
+   text-shadow: none;
+   transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
  }
- .mar{
-  width: 30%;
-  margin-right: 10px;
+ 
+ .btn-shine:hover {
+   border-color: #FFF;
+   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+   outline-color: transparent;
+   outline-offset: 12px;
+   text-shadow: 2px 2px 3px #000;
  }
- .mo{
-  margin-left: 82px;
-  margin-top: 30px;
+ 
+ 
+ /* ここはコピーしなくてOK　*/
+ .container-02 {
+   text-align: center;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   background-color: transparent;
  }
- .teri{
-  width: 30%;
+ 
+ /* ここから下がボタンのCSS　*/
+ .btn-shine.is-pink:hover {
+   text-shadow: 2px 2px 3px transparent;/* text-shadowを背景色に変更する*/
  }
- .te{
-  margin-left: 82px;
-  margin-top: 30px;
- }
- .sara{
-  width: 30%;
-  padding-left: 70px;
- }
- .sa{
-  margin-left: 82px;
-  margin-top: 30px;
- }
+
+ 

@@ -3,8 +3,12 @@
   margin: 0;
   }
   body {
-    font-family: "Shadows Into Light",  "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
+    font-family:   "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
        "ＭＳ Ｐゴシック", sans-serif;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       min-height: 100vh;
   }
 
   header {
@@ -41,12 +45,13 @@
     color: white;
     height: 30px;
     background-color: #000;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
     display: flex;
     align-items: center;
-    position: relative;
     justify-content: flex-end;
+    font-family: 'Shadows Into Light', cursive;;
+    
   }
   .header-nav{
     color: rgba(241, 74, 14, 0.799);
@@ -61,5 +66,33 @@
     font-size: 15px;
   }
 
+  header li {
+    color: #e3af12;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 45px;
+    width: 200px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+    text-align: center;
+    
+  }
+  
+  header li:hover {
+    border-color: #e3af12;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: transparent;
+    outline-offset: 12px;
+    text-shadow: 2px 2px 3px #000;
+   
+  }
   
  

@@ -10,9 +10,12 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+ <body>
   <header>
    <image src="/assets/logo.jpg" class="event">
     <div class="header-list">
@@ -24,14 +27,16 @@
       <li><%= link_to "ログイン", new_user_session_path %></li>
       <% end %>
      </ul>
-     </div>
- </div>
+   </div>
+   </div>
   </header>
   <main>
    <%= yield %>
   </main>
-  <footer>
-  <p>Copyright © GeekSalon All Rights Reserved.</p>
-</footer>
+ <footer>
+   <p>Copyright © GeekSalon All Rights Reserved.</p>
+ </footer>
+ 
  </body>
+ 
 </html>
